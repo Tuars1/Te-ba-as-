@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ESTO ES PARA EL FONDO*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(7, 12, 17); /*COLOR DEL FONDO*/
+}
+/*LA POSICION Y COLOR DEL TITULO*/
+h2 {
+    text-align: center;
+    font-size: 2cm;
+    color: rgb(255, 255, 255); /*COLOR DEL TITULO*/
+    margin: 15px 0;
+}
+/*ENA ACA ES PARA CENTRAR LAS OPCIONES*/
+.btn-group{
+    width: 100%;
+    height: 40px;
+    display: flex ;
+    justify-content: center; /*ACA CENTRA LA OPCION*/
+    margin-top: 50px;
+}
+/*ESTO ES PARA EL TAMAÑO Y OTRAS COSA DE LAS OPCIONES*/
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    color: rgb(12, 8, 2); /*COLOR DE LA LETRA DEL LA OPCION */
+    font-size: 1.2em;
+    /*background-color: brown;*/ /*EL FONDO DEL CUADRO DE LAS OPCIONES*/
+    border: transparent; /*COLOR DE LOS BORDES, ESTA EN TRANSPARENTE*/
+    border-radius: 30px;/*ESTO HACE QUE NO TENGA BORDES*/
+}
+button:nth-child(1){
+    margin-left: -200px; /*aca aparece el "No" pegado al "Si"*/
+    background-color: rgb(38, 221, 21);
+}
+button:nth-child(2){
+    margin-right: -200px; /*aca separa el opcion*/
+    background-color: rgb(255, 0, 0);/*Fondo de la opcion*/
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+img:hover{
+    border-radius: 20%;
+    transition: 0.5s ease;
+}
